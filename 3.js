@@ -15,15 +15,19 @@ function angka(digit) {
 
     for (let i = 0; i <= digit.length; i++) {
         let cekNumb = +digit[i] || digit[i] == '0'
-        // console.log(cekNumb)
         if (cekNumb != false) {
-            hasil += digit[i]
+            let kosong = {}
+            if (digit[i] != digit[i][i]) {
+                // kosong = +digit[i]
+                kosong = 0
+            }
+            //else {
+            //     kosong = +digit[i]
+            // }
+            console.log(kosong)
         }
     }
-    // for (let j = 0; j <= hasil.length; j++) {
-    //     // console.log(j)\
-    // }
-    return hasil
+    // return hasil
 }
 
 console.log(angka('9.86-A5.321'))

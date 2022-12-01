@@ -3,15 +3,21 @@
 // int low = 2,
 // int high = 15,
 // maka akan menghasilkan ouput = 4
-let data = [1, 4, 7, 1, 9, 12, 20, 16, 15]
-let ouput = []
+let data = [1, 4, 7, 1, 9, 12, 20, 16, 15, 14]
+let temp = []
+
 for (let i = 1; i < data.length; i++) {
-    let temp = []
     if (data[i] >= 2 && data[i] <= 15) {
-        temp += data[i]
-        console.log(temp.sum())
+        temp.push(data[i])
     }
-    // console.log(temp)
 }
 
-// console.log(ouput)
+let hasil = 0
+// let dataArray = []
+temp.forEach((a, b) => {
+    // dataArray.push(a)
+    hasil = b + 1
+})
+
+// console.log(dataArray)
+console.log(hasil)
